@@ -1,6 +1,7 @@
-         html{
+        html{
              height: 100vh ;
              width:100vm;
+             
          }
             body{
                 background: black ;
@@ -17,6 +18,12 @@
                 align-items: center ;
                 
             }
+            #all{
+              direction: ltr !important;
+              list-style: none !important;
+              margin: 0!important;
+              font-family: 'Marhey', sans-serif; !important 
+            }
             #start{
                 display:block  ;
                 background: skyblue ;
@@ -26,7 +33,7 @@
                 width:100vm;
                 text-align: center;
             }
-            .wrapperr{
+            .wrapper{
                 display: none; 
                 position: center;
                 justify-content: center;
@@ -40,23 +47,25 @@
             .quiz{
                 display: block;
                 width:600px;
-                height:500px;
+                height:100%;
                 border-radius:50px;
                 margin-bottom: 0px;
                 text-align: center;
                 justify-content:center                 
                 position: relative;
             }
+
             #quiz_header{
                 display: flex ;
                 width: auto;
                 justify-content: space-between;
                 border-bottom-left-radius: 3px;
                 border-bottom-right-radius: 3px;
-                background-color: #fff;
+                background-color: #ddd;
                 box-shadow: 30px #224DB5;
                 z-index: 1;
                 direction: rtl;
+                height : 100%;
                 border-radius: 50px 0;
             }
             .quiz_user{
@@ -72,16 +81,18 @@
                 border-radius:0 0 50px 50px;
                 border: 10px double greenyellow;
             }
-            .option_group{
+            dl.option_group{
                 margin: 10px 0 0 0;
 padding: 0;
-                width:500px;
+                width: 100%;
                 display: inline-flex;
+                list-style-type:  none !important;
             }
-            .option{
+            li.option{
                 height: 100px;
-                width: 100px;
+                width: 100%;
                 margin: 4px;
+                color:#000 ;
                 background-color: #fff;
                 padding: 10px 20px;
                 border-radius: 50%;
@@ -90,7 +101,21 @@ padding: 0;
                 text-align: center;
                 animation: zoomInUp 1.4s; 
                 font-size: 50px;
+                list-style-type : none !important;
             }
+           .quiz #h22,#fin h2,#h22{
+               background: none !important;
+               border : none!important;
+               border-radius : none !important;
+               margin: 10px 0;
+               
+           }
+           #h22 img,.h22 img{
+               margin-top: 15px ; 
+           }
+           #all ul,#all li{
+               list-style: none !important;
+           }
             .option:hover ,.option:active{
 
                 border: 2px solid #341f97;
@@ -102,15 +127,22 @@ padding: 0;
             .op1,.op2{
                 height: 100px;
                 width: 100px;
-                margin:  10px 0;
+                margin: 10px !important;
                 background-color: red;
                 border-radius: 50%;
                 border: 2px solid;
                 transition: 2s all;
-                display: inline-block;
+                display: flex ;
                 text-align: center;
-                font-size: 50px;
-                padding: 0px 0 15px 0;
+                justify-content: center ;
+                align-items: center ;
+                font-weight :900px ;
+                padding: 0px 0 0px 0;
+            }
+            .A,.B{
+                font-size : 50px !important;
+                color: #000 ;
+                margin-bottom: 30px;
             }
             .op2{
                 background-color: greenyellow;
@@ -129,6 +161,11 @@ padding: 0;
                 text-underline-position: none;
                 box-shadow: 2px 5px 4px 4px #000;
             }
+            #btn-next h3,.btn-next h3{
+                background: none !important;
+                border : none!important;
+                
+            }
             .btn-next{
               font-size : 25px ;
               padding: 0;
@@ -144,7 +181,7 @@ padding: 0;
                 font-weight: 900px ;
                 animation: bounceOutUp   1.2s ;
             }
-            #timerr{
+            #timer{
                 background: red;
                 text-align: center;
                 padding-top: 20px;
@@ -165,12 +202,15 @@ padding: 0;
                 transition: ease;
                 animation-duration: .9s;
                 border-radius: 20px;
-                box-shadow: 0px 10px 4px 10px #F0F70C;
+                box-shadow: 0px 10px 4px 10px #F0F70C !important;
             }
-            .name{
+           #all .name{
                 background: #1726CE;
-                padding: 20px;
                 color: #fff;
+                height: 5vh;
+                justify-content : center ;
+                align-items : center ;
+                display: inline-flex ;
                 border-radius: 25px;
                 font-size: 25px;
                 font-weight: 500px;
@@ -208,7 +248,7 @@ padding: 0;
                 direction: rtl ;
                 align-content: center;
                 text-align: center;
-                margin: 10px 0 20px 10%;
+                margin: 10px 0 5% 10%;
                 padding: 0;
                 justify-content: center;
             }
@@ -219,27 +259,47 @@ padding: 0;
                 border: 5px solid #000;
                 border-radius: 40%;
             }
-            h2{
+           #h22,.h22{
                 margin-top: -15px;
+                
                 color: greenyellow;
                 font-size: 30px;
                 background: none;
-                text-align: center;
-                display: block ;
+                text-align: center; 
+                display: block !important;
             }
-            #locor,#lzcor{
+            #locor4,#lzcor{
                 background: red;
                 color: #000;
-                display: block   ;
-                position :center ;
+                display: flex;
                 border: 3px solid #000;
                 border-radius: 20px;
-                padding: 2px 6px;
-                height: 15px;
                 width: 80px;
-                font-size: 12px;
+                padding: 0 0 0px 0;
+                font-size : 10px ;
+                height: 10px ;
+              transform: translateY(-200px)
+               
             }
             #lzcor{
+                background: #2eff00c7;
+            }
+            #locor,#lzcorr{
+              display : flex  ;
+              background: #ff0bbc ;
+              text-align: center ;
+              position : absolute ;
+              height: 20px ;
+              color: #000 ;
+              width: 95px ;
+              border: solid 2px #000;
+              justify-content: center ;
+              text-align: center ;
+              border-radius : 20px ;
+              margin-top: 60px;
+              transform: scale(1.2);
+            }
+            #lzcorr{
                 background: #2eff00c7;
             }
           #mqu{
@@ -258,19 +318,19 @@ padding: 0;
                 animation : hh 10s infinite ;
             }
             #mqut{
-            
+            width : 100%;
                 color: greenyellow;
                 font-size: 25px;
-
+transform: translateY(-400px);
                 animation: flash .7s infinite ;
             }
             #top{
               width: 100% ;
-              color: #fff ;
+              color: #000;
            display: flex ; 
            animation: bounce4 1s infinite ;
             }
-            input{
+           #all input{
                 background: #c3c0c0cc ;
                 width:90%;
                 padding: 5px ;
@@ -288,7 +348,7 @@ padding: 0;
                transform : translate(355px,-100px);
                 background: red ;
             }
-             a{
+           #all a{
                 display: inline-flex;
             }
             #fc{
@@ -296,7 +356,7 @@ padding: 0;
                 margin: 0;
                 padding: 0;
             }
-            table{
+         #all table{
 
               padding: 0;
 
@@ -312,7 +372,7 @@ padding: 0;
 
 
             }
-            td{
+           #all td{
               background : #362556de;
               padding: 0px;
               color: #fff ;
@@ -321,13 +381,13 @@ padding: 0;
               border-radius : 0px ;
               font-size : 25px;
             }
-          #bodyo td:hover {
+          #all td:hover {
               background : #4b16f1;
               color: #fff ;
               animation : bounce4 3s ;
             }
 
-            #start li{
+           #all #start li{
                 background: #c9c9c9c5;
                 color: #25253b;
                 margin: 5px ;
@@ -344,23 +404,23 @@ padding: 0;
                 align-items: center ;
                 box-shadow: 3px 4px 4px #000000 ;
             }
-             #start li:hover{
+           #all  #start li:hover{
                  background : #ebf4b4ca;
                  color: #332626bb;
                  transform : scale(1.2);
                  transition: .5s;
                  border-bottom: 5px solid #9972edf1 ;
              }
-             #start li:nth-child(3),#start li:nth-child(1){
+            #all #start li:nth-child(3),#all #start li:nth-child(1){
                animation : zoomIn 3s ease-in-out ;
              }
-             #start li:nth-child(2){
+             #all #start li:nth-child(2){
                animation: zoomIn 3s  ;
              }
-             #start li:nth-child(4){ 
+           #all  #start li:nth-child(4){ 
                  animation : bounce4  2s infinite ;
              }
-             #start ul{
+           #all  #start ul{
                list-style: none;
                padding: 0;
                margin: 0;
@@ -373,10 +433,10 @@ padding: 0;
                 display: flex ;
                 
               }
-              .llo td{
+             #all .llo td{
                 background: #496becd5 ;
               }
-              .ulk{
+            #all  .ulk{
                 background: none ;
                 text-align: center ;
                 display: flex ;
@@ -388,6 +448,8 @@ padding: 0;
                 color: #3d0707 ;
                 border-radius : 20px ;
                 padding: 5px 10px;
+                display : inline-flex ;
+                margin : 10px 0px 0px 0px;
               }
               #pp{
                 padding: 5px 10px;
@@ -422,11 +484,13 @@ padding: 0;
                 animation: bounce4 2s infinite ;
            
               }
-              .option_grou{
+             #all .option_grou{
                   text-align: center ;
-                  display: inline;
+                  display: flex ;
+                  margin-top: 5px ;
+                  justify-content : center ;
               }
-             #tjpg{
+           #all #tjpg{
                 height: auto ;
                 width : auto ;
                 background: none ;
@@ -436,7 +500,7 @@ padding: 0;
                 animation: bounce42 3s infinite;
 
 }
-#tjpg:hover{
+#all #tjpg:hover{
     transform:  scale(2) rotate(720deg);
     transition : 2s all ;
 }
@@ -509,15 +573,15 @@ padding: 0;
 
     100%
 }
-#bodyo progress{
+#bodyo #all progress{
   
    width: 85%;
 transform : translateY(-8px);
 }
-.h2n{
+#all.h2n{
     display: block ;
 }
-.nexb,.nexbr{
+#all .nexb,#all .nexbr{
   background: #330ddd;
   padding:2px ;
   border-radius : 190px 100px 500px 500px;
@@ -533,11 +597,11 @@ transform : translateY(-8px);
   box-shadow: 5px 4px 5px #000000 ;
 }
 
-#buts{
+#all #buts{
   display: flex ;
   justify-content: space-between ;
   height :0;
-    transform: translateY(-350px);
+    transform: translateY(-550px);
   
 }
 .afte{
@@ -549,7 +613,7 @@ transform : translateY(-8px);
   justify-content: center ;
   align-items: center ;
 }
-.end{
+#all .end{
   height: 50vh;
   width: 50%;
   background: linear-gradient(#e5c2f8,#5f5858);
@@ -578,7 +642,7 @@ transform : translateY(-8px);
 
 }
 
-.tas{
+#all .tas{
   border-radius : 50%  50% 0 0;
   
 }
@@ -648,29 +712,48 @@ transform : translateY(-8px);
         }
 }
 
-#tf ul,.nft{
-  list-style: none ;
-  display: flex ;
-  justify-content: space-between ;
+#all dl#tf dl,#all .nft{
+ list-style-type: none !important;
+  display:flex !important ;
+  justify-content: space-between !important;
   margin: 0;
+  background: none ;
+  color: black !important;
+  font-size : 25px ;
   padding: 0;
-  text-align: center ;
-  align-items: center ;
+  text-align: center!important ;
+  align-items: center !important;
   
 }
+#tf{
+    text-align: center !important;
+}
+#tf dl{
+    display : flex ;
+    text-align: center ;
+    width : 200px ;
+}
 
-#tf li a ,#start td a,.nft li a,.nft li a{
+.nft{
+    justify-content : space-between ;
+    display: flex !important;
+}
+   
+#all #tf li a ,#all #start td a,#all .nft li a{
   height: 50px;
+  list-style: none !important;
+  color: none !important;
+  background: none !important;
   width: 50px;
   box-shadow : 0px 4px 6px 0px #4e4343;
   border-radius : 50%;
   animation: bounce42 3s infinite ;
 }
-#tf li a:hover{
+#all #tf li a:hover{
   transform : scale(2);
   animation: none;
 }
-#y{
+#all #y{
     width: 200px ;
 }
 @-webkit-keyframes bounce4 {
